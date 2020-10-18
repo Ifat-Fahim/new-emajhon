@@ -1,5 +1,6 @@
-* {
+.cart {
     text-align: center;
+    position: fixed;
 }
 
 .grand-total {

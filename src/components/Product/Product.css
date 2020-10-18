@@ -32,3 +32,23 @@
 .main-button:hover {
     background: gold;
 }
+
+.features {
+    color: black !important;
+    margin-left: -20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.product-description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.description-a {
+    width: 80%;
+}

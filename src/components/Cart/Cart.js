@@ -3,10 +3,6 @@ import './Cart.css'
 
 const Cart = (props) => {
     const cart = props.cart;
-    // function formatNum (num) {
-    //     const formatedNum = num.toFixed(2);
-    //     return formatedNum;
-    // }
     const total = cart.reduce((total, product) => total + product.price, 0);
     const shipping = (total * 10) / 100;
     const tax = (total * 25) / 100;
