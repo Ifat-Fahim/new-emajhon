@@ -6,7 +6,6 @@ import './Product.css';
 
 const Product = (props) => {
     const {img, name, seller,price, stock, category, key, features} = props.product;
-    console.log(props.product);
     return (
         <div className="product">
             <div className="img-container">
@@ -25,7 +24,7 @@ const Product = (props) => {
                     <ul>
                         <h3 className="features">{ features.length > 0 && 'Features:'} </h3>
                         {
-                            features.length > 0 && features.map(feature =>  <li> {feature.description} </li>)
+                            features.length > 0 && features.map((feature, index) =>  <li key={index}> {feature.description} </li>)
                         }
                     </ul>
                </div>

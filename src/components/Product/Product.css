@@ -1,7 +1,10 @@
 .product {
     display: flex;
-    border-bottom: 1px solid gray;
     margin-bottom: 15px;
+}
+
+.product:not(:last-child) {
+    border-bottom: 1px solid gray;
 }
 
 .img-container {
